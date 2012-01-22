@@ -1,0 +1,65 @@
+<%= form_for(@game) do |f| %>
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% @game.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ancientOneDoomCounters %><br />
+    <%= f.number_field :ancientOneDoomCounters %>
+  </div>
+  <div class="field">
+    <%= f.label :terrorLevel %><br />
+    <%= f.number_field :terrorLevel %>
+  </div>
+  <div class="field">
+    <%= f.label :bankLoans %><br />
+    <%= f.number_field :bankLoans %>
+  </div>
+  <div class="field">
+    <%= f.label :elderSign %><br />
+    <%= f.number_field :elderSign %>
+  </div>
+  <div class="field">
+    <%= f.label :gateTrophies %><br />
+    <%= f.number_field :gateTrophies %>
+  </div>
+  <div class="field">
+    <%= f.label :monsterTrophies %><br />
+    <%= f.number_field :monsterTrophies %>
+  </div>
+  <div class="field">
+    <%= f.label :survivingInvestigators %><br />
+    <%= f.number_field :survivingInvestigators %>
+  </div>
+  <div class="field">
+    <%= f.label :ancientOne %><br />
+    <%= f.text_field :ancientOne %>
+  </div>
+  <div class="field">
+    <%= f.label :heralds %><br />
+    <%= f.text_field :heralds %>
+  </div>
+  <div class="field">
+    <%= f.label :guardians %><br />
+    <%= f.text_field :guardians %>
+  </div>
+  <div class="field">
+    <%= f.label :expansions %><br />
+    <%= f.text_field :expansions %>
+  </div>
+  <div class="field">
+    <%= f.label :investigators %><br />
+    <%= f.text_field :investigators %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ancientOneDoomCounters: 1
+  terrorLevel: 1
+  bankLoans: 1
+  elderSign: 1
+  gateTrophies: 1
+  monsterTrophies: 1
+  survivingInvestigators: 1
+  ancientOne: MyString
+  heralds: MyString
+  guardians: MyString
+  expansions: MyString
+  investigators: MyString
+
+two:
+  ancientOneDoomCounters: 1
+  terrorLevel: 1
+  bankLoans: 1
+  elderSign: 1
+  gateTrophies: 1
+  monsterTrophies: 1
+  survivingInvestigators: 1
+  ancientOne: MyString
+  heralds: MyString
+  guardians: MyString
+  expansions: MyString
+  investigators: MyString

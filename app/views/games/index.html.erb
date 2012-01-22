@@ -1,0 +1,45 @@
+<h1>Listing games</h1>
+
+<table>
+  <tr>
+    <th>Ancientonedoomcounters</th>
+    <th>Terrorlevel</th>
+    <th>Bankloans</th>
+    <th>Eldersign</th>
+    <th>Gatetrophies</th>
+    <th>Monstertrophies</th>
+    <th>Survivinginvestigators</th>
+    <th>Ancientone</th>
+    <th>Heralds</th>
+    <th>Guardians</th>
+    <th>Expansions</th>
+    <th>Investigators</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @games.each do |game| %>
+  <tr>
+    <td><%= game.ancientOneDoomCounters %></td>
+    <td><%= game.terrorLevel %></td>
+    <td><%= game.bankLoans %></td>
+    <td><%= game.elderSign %></td>
+    <td><%= game.gateTrophies %></td>
+    <td><%= game.monsterTrophies %></td>
+    <td><%= game.survivingInvestigators %></td>
+    <td><%= game.ancientOne %></td>
+    <td><%= game.heralds %></td>
+    <td><%= game.guardians %></td>
+    <td><%= game.expansions %></td>
+    <td><%= game.investigators %></td>
+    <td><%= link_to 'Show', game %></td>
+    <td><%= link_to 'Edit', edit_game_path(game) %></td>
+    <td><%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Game', new_game_path %>
